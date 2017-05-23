@@ -76,11 +76,24 @@
     <Import Include="WeatherServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Colors\Colors.vb" />
+    <Compile Include="Controls\Button.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CityList.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Forms\mainMenu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\mainMenu.Designer.vb">
       <DependentUpon>mainMenu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSearchLocations.Designer.vb">
+      <DependentUpon>frmSearchLocations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSearchLocations.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -103,6 +116,9 @@
     <EmbeddedResource Include="Forms\mainMenu.resx">
       <DependentUpon>mainMenu.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSearchLocations.resx">
+      <DependentUpon>frmSearchLocations.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -124,14 +140,166 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\" />
-    <Folder Include="Controls\" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\WeatherServices\WeatherServices.vbproj">
       <Project>{53644a8d-7ebf-4bb9-aceb-6e5103e335cf}</Project>
       <Name>WeatherServices</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502475_sun-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502474_sun-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502477_n-a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502479_moon-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502481_sun-cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502482_moon-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502484_snow-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502486_sun-fog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502487_clouds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502489_wind-cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502490_rain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502492_compass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502494_cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502496_celsius.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502497_moon-cloud-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502499_eclipse-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502501_snow-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502503_cloud-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502507_storm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502508_fog-cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502513_rain-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502515_moon-fog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502517_fog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502518_storms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502520_rain-2-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502522_variable-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502523_temperature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502524_rain-wind-cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502526_snow-2-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502527_fog-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502530_snow-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502532_storms-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502533_wind-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502535_rain-wind-cloud-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502536_storm-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502538_snow-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502540_sun-cloud-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502542_storm-2-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502543_fahrenheit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502545_storm-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502551_snow-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502553_moon-cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502555_snow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502556_sunshine-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502558_wind-cloud-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502560_rain-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1495502562_snow-3-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compass2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

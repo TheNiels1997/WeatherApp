@@ -1,10 +1,10 @@
 ﻿Public Class Client
-    Dim obsTemplate As String = "http://wxdata.weather.com/wxdata/obs/{0}.xml?key=e88d3874-a740-102c-bafd-001321203584&locale={1}&units={2}"
-    Dim fcastTemplate As String = "http://wxdata.weather.com/wxdata/df/{0}.xml?key=e88d3874-a740-102c-bafd-001321203584&day={1}&locale={2}&units={3}"
-    Dim searchTemplate As String = "http://wxdata.weather.com/wxdata/locsearch/{0}.xml?key=e88d3874-a740-102c-bafd-001321203584&locale={1}"
+    Dim obsTemplate As String = "http://wxdata.weather.com/wxdata/obs/{0}.json?key=e88d3874-a740-102c-bafd-001321203584&locale={1}&units={2}"
+    Dim fcastTemplate As String = "http://wxdata.weather.com/wxdata/df/{0}.json?key=e88d3874-a740-102c-bafd-001321203584&day={1}&locale={2}&units={3}"
+    Dim searchTemplate As String = "http://wxdata.weather.com/wxdata/locsearch/{0}.json?key=e88d3874-a740-102c-bafd-001321203584&locale={1}"
 
-    Public Property Locale As String
-    Public Property Units As String = "e"
+    Public Property Locale As String = "nl"
+    Public Property Units As String = "m"
     Public Property DayCount As Integer = 5
 
     Public Property CurrentLocation As WxLocation
